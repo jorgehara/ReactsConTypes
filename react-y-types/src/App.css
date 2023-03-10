@@ -39,6 +39,12 @@
   padding: 2em;
 }
 
+.sizeImage{
+  /* width: 25%;
+  height: 30%; */
+  border-radius: 25%;
+}
+
 .read-the-docs {
   color: #888;
 }
