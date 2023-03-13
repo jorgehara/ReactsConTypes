@@ -7,6 +7,8 @@ type LazyImageProps = { src: string };
 type ImageNative = ImgHTMLAttributes<HTMLImageElement>;
 type Props = LazyImageProps & ImageNative
 
+
+
 export const LazyImage = ({ src, ...imgProps }: Props): JSX.Element => {
   // array simple
   // const [images, setImages] = useState<Array<string>>([

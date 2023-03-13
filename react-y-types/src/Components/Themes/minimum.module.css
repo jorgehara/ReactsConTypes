@@ -1,0 +1,347 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;
+400;
+700&display=swap'); */
+ body {
+	 background-color: white !important;
+}
+ .pages {
+	 margin: 1rem 0;
+	 flex-grow: 2;
+	 background: white;
+	 display: flex;
+}
+ .pages :global(.MuiAppBar-root) {
+	 backdrop-filter: blur(4px);
+}
+ .pages :global(.MuiAppBar-root) .profilePicture {
+	 margin: 0 0 0 auto;
+}
+ .pages :global(.MuiAppBar-root) .profilePicture img {
+	 width: 2.5rem;
+	 border-radius: 1.75rem;
+}
+ .pages .mainarea {
+	 flex-grow: 2;
+	 margin-bottom: 4rem;
+}
+ .pages .mainarea .tableHeading {
+	 margin: 5rem auto 3rem;
+}
+ .pages .mainarea :global(.MuiPaper-elevation1) {
+	 transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+	 overflow: hidden;
+	 box-shadow: rgba(145, 158, 171, 0.24) 0px 0px 2px 0px, rgba(145, 158, 171, 0.24) 0px 16px 32px -4px;
+	 border-radius: 16px;
+}
+ .pages .mainarea :global(.MuiTableRow-head) {
+	 background-color: #f4f6f8;
+}
+ .pages .mainarea :global(.tableCell) img {
+	 width: 3rem;
+	 height: 3rem;
+	 overflow: hidden;
+	 border-radius: 1.5rem;
+}
+ .pages .mainarea :global(.MuiFab-root) {
+	 position: absolute;
+	 bottom: 2rem;
+	 right: 2rem;
+}
+ .pages .mainarea .extensibleInput {
+	 width: 15rem;
+	 transition: box-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, width 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+ .pages .mainarea .extensibleInput :global(.Mui-focused) {
+	 width: 20rem;
+	 transition: box-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, width 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+	 box-shadow: 0 8px 16px 0 rgba(145, 158, 171, 0.24);
+}
+ .pages .mainarea .extensibleInput :global(.Mui-focused) :global(.MuiOutlinedInput-notchedOutline) {
+	 border-color: rgba(0, 0, 0, 0.23);
+	 border-width: 1px;
+}
+ .pages .mainarea .tabletoolbar {
+	 height: 6rem;
+	 box-sizing: border-box;
+	 padding-left: 1rem;
+	 align-items: center;
+	 display: flex;
+}
+ .pages .mainarea .marginatedForms {
+	 margin: 1rem 2rem;
+	 display: flex;
+	 flex-direction: column;
+}
+ .pages .mainarea .marginatedForms button {
+	 margin: 0.5rem 0 1rem auto;
+}
+ .registerBody .loginPage, .loginBody .loginPage, .retrieveBody .loginPage {
+	 height: 100%;
+}
+ .registerBody .loginPage :global(.MuiGrid-container), .loginBody .loginPage :global(.MuiGrid-container), .retrieveBody .loginPage :global(.MuiGrid-container) {
+	 height: 100%;
+}
+ .registerBody .loginPage .right, .loginBody .loginPage .right, .retrieveBody .loginPage .right {
+	 width: 70%;
+	 display: flex;
+	 flex-direction: column;
+	 align-content: flex-end;
+	 justify-content: center;
+	 align-items: flex-end;
+	 flex-wrap: wrap;
+	 margin-top: 1rem;
+}
+ .registerBody .loginPage .right a, .loginBody .loginPage .right a, .retrieveBody .loginPage .right a {
+	 color: #2196f3;
+}
+ .registerBody .loginPage .containerLogin, .loginBody .loginPage .containerLogin, .retrieveBody .loginPage .containerLogin {
+	 display: flex;
+	 align-items: center;
+	 justify-content: space-evenly;
+	 width: 40%;
+	 margin: 1rem auto;
+}
+ .registerBody .loginPage .containerLogin .right, .loginBody .loginPage .containerLogin .right, .retrieveBody .loginPage .containerLogin .right {
+	 margin-top: unset;
+}
+ .registerBody .loginPage .loginBox, .loginBody .loginPage .loginBox, .retrieveBody .loginPage .loginBox, .registerBody .loginPage .registerBox, .loginBody .loginPage .registerBox, .retrieveBody .loginPage .registerBox {
+	 width: 40%;
+	 margin: 0rem auto;
+	 color: #212b36;
+	 display: flex;
+	 align-content: center;
+	 justify-content: center;
+	 align-items: center;
+	 flex-direction: row;
+	 flex-wrap: wrap;
+	 padding: 2rem;
+	 border: 1px solid #b9b9b9;
+	 border-radius: 1rem;
+	 box-shadow: 0 0 11px 2px rgba(145, 158, 171, 0.24);
+}
+ .registerBody .loginPage .loginBox a, .loginBody .loginPage .loginBox a, .retrieveBody .loginPage .loginBox a, .registerBody .loginPage .registerBox a, .loginBody .loginPage .registerBox a, .retrieveBody .loginPage .registerBox a {
+	 color: #2196f3;
+}
+ .registerBody .loginPage .loginBox .headingLogin, .loginBody .loginPage .loginBox .headingLogin, .retrieveBody .loginPage .loginBox .headingLogin, .registerBody .loginPage .registerBox .headingLogin, .loginBody .loginPage .registerBox .headingLogin, .retrieveBody .loginPage .registerBox .headingLogin, .registerBody .loginPage .loginBox.headingRegister, .loginBody .loginPage .loginBox.headingRegister, .retrieveBody .loginPage .loginBox.headingRegister, .registerBody .loginPage .registerBox.headingRegister, .loginBody .loginPage .registerBox.headingRegister, .retrieveBody .loginPage .registerBox.headingRegister {
+	 display: flex;
+	 flex-direction: column;
+	 align-items: center;
+}
+ .registerBody .loginPage .loginBox :global(.MuiFormControl-root), .loginBody .loginPage .loginBox :global(.MuiFormControl-root), .retrieveBody .loginPage .loginBox :global(.MuiFormControl-root), .registerBody .loginPage .registerBox :global(.MuiFormControl-root), .loginBody .loginPage .registerBox :global(.MuiFormControl-root), .retrieveBody .loginPage .registerBox :global(.MuiFormControl-root) {
+	 width: 100%;
+}
+ .registerBody .loginPage .loginBox :global(.MuiCheckbox-root.Mui-checked), .loginBody .loginPage .loginBox :global(.MuiCheckbox-root.Mui-checked), .retrieveBody .loginPage .loginBox :global(.MuiCheckbox-root.Mui-checked), .registerBody .loginPage .registerBox :global(.MuiCheckbox-root.Mui-checked), .loginBody .loginPage .registerBox :global(.MuiCheckbox-root.Mui-checked), .retrieveBody .loginPage .registerBox :global(.MuiCheckbox-root.Mui-checked) {
+	 color: #2196f3;
+}
+ .registerBody .loginPage .loginBox :global(.MuiTypography-h3), .loginBody .loginPage .loginBox :global(.MuiTypography-h3), .retrieveBody .loginPage .loginBox :global(.MuiTypography-h3), .registerBody .loginPage .registerBox :global(.MuiTypography-h3), .loginBody .loginPage .registerBox :global(.MuiTypography-h3), .retrieveBody .loginPage .registerBox :global(.MuiTypography-h3) {
+	 margin: 0px 0px 8px;
+	 font-weight: 400;
+	 font-size: 3rem;
+	 line-height: 1.5;
+	 text-align: center;
+}
+ .registerBody .loginPage .loginBox :global(.MuiTypography-body1), .loginBody .loginPage .loginBox :global(.MuiTypography-body1), .retrieveBody .loginPage .loginBox :global(.MuiTypography-body1), .registerBody .loginPage .registerBox :global(.MuiTypography-body1), .loginBody .loginPage .registerBox :global(.MuiTypography-body1), .retrieveBody .loginPage .registerBox :global(.MuiTypography-body1) {
+	 color: #637381;
+}
+ .registerBody .loginPage .loginBox .separatorLine, .loginBody .loginPage .loginBox .separatorLine, .retrieveBody .loginPage .loginBox .separatorLine, .registerBody .loginPage .registerBox .separatorLine, .loginBody .loginPage .registerBox .separatorLine, .retrieveBody .loginPage .registerBox .separatorLine {
+	 text-align: center;
+	 padding: 1rem;
+	 margin: 0 auto;
+	 position: relative;
+	 z-index: 1;
+}
+ .registerBody .loginPage .loginBox .separatorLine::before, .loginBody .loginPage .loginBox .separatorLine::before, .retrieveBody .loginPage .loginBox .separatorLine::before, .registerBody .loginPage .registerBox .separatorLine::before, .loginBody .loginPage .registerBox .separatorLine::before, .retrieveBody .loginPage .registerBox .separatorLine::before {
+	 position: absolute;
+	 content: ' ';
+	 height: 50%;
+	 width: 45%;
+	 left: 0;
+	 top: 0;
+	 z-index: -1;
+	 border-bottom: thin solid rgba(145, 158, 171, 0.24);
+}
+ .registerBody .loginPage .loginBox .separatorLine::after, .loginBody .loginPage .loginBox .separatorLine::after, .retrieveBody .loginPage .loginBox .separatorLine::after, .registerBody .loginPage .registerBox .separatorLine::after, .loginBody .loginPage .registerBox .separatorLine::after, .retrieveBody .loginPage .registerBox .separatorLine::after {
+	 position: absolute;
+	 content: ' ';
+	 height: 50%;
+	 width: 45%;
+	 left: auto;
+	 right: 0;
+	 top: 0;
+	 z-index: -1;
+	 border-bottom: thin solid rgba(145, 158, 171, 0.24);
+}
+ .registerBody .loginPage .loginBox .flexLine, .loginBody .loginPage .loginBox .flexLine, .retrieveBody .loginPage .loginBox .flexLine, .registerBody .loginPage .registerBox .flexLine, .loginBody .loginPage .registerBox .flexLine, .retrieveBody .loginPage .registerBox .flexLine {
+	 display: flex;
+	 justify-content: space-between;
+	 align-items: center;
+	 margin: 1rem 0;
+}
+ .registerBody .loginPage .loginBox button, .loginBody .loginPage .loginBox button, .retrieveBody .loginPage .loginBox button, .registerBody .loginPage .registerBox button, .loginBody .loginPage .registerBox button, .retrieveBody .loginPage .registerBox button {
+	 margin: 1rem;
+	 padding: 0.5rem 3rem;
+	 background-color: #2196f3;
+	 color: #fff;
+}
+ .retrieveBody .loginPage {
+	 height: 100%;
+}
+ .retrieveBody .loginPage .regulatedWidth {
+	 width: 70%;
+	 margin: 1rem auto;
+	 color: #212b36;
+	 display: flex;
+	 align-content: center;
+	 justify-content: center;
+	 align-items: center;
+	 flex-direction: column;
+	 flex-wrap: wrap;
+}
+ .retrieveBody .loginPage .regulatedWidth :global(.MuiGrid-container) {
+	 height: 100%;
+}
+ .retrieveBody .loginPage .regulatedWidth a {
+	 color: #2196f3;
+}
+ .retrieveBody .loginPage .regulatedWidth :global(.MuiTypography-h3) {
+	 margin: 0px 0px 8px;
+	 font-weight: 400;
+	 font-size: 3rem;
+	 line-height: 1.5;
+	 text-align: center;
+}
+ .retrieveBody .loginPage .regulatedWidth :global(.MuiTypography-body1) {
+	 color: #637381;
+	 text-align: center;
+	 width: 50%;
+}
+ .retrieveBody .loginPage .regulatedWidth :global(.MuiFormControl-root) {
+	 width: 60%;
+}
+ .retrieveBody .loginPage .regulatedWidth button {
+	 margin: 1rem;
+	 padding: 0.5rem 3rem;
+	 background-color: #2196f3;
+	 color: #fff;
+}
+ .menuProfileDetails {
+	 border-bottom: 1px solid rgba(224, 224, 224, 1);
+	 padding: 1rem 0.5rem;
+	 font-size: 0.8rem;
+	 color: rgba(128, 128, 128, 1);
+}
+ .fileuploadprofile {
+	 margin: 0 auto;
+}
+ .fileuploadprofile > div:first-child {
+	 max-height: unset;
+	 padding: 0.5rem;
+	 border: 1px dotted rgba(0, 0, 0, 0.23);
+	 border-radius: 50%;
+}
+ .fileuploadprofile > div:first-child > img {
+	 max-height: unset;
+	 width: 8rem;
+	 height: 8rem;
+	 border-radius: 4rem;
+}
+ .fileuploadprofile :global(.MuiFormLabel-root) {
+	 display: none;
+}
+ .fileuploadprofile :global(.MuiInputBase-root)::before, .fileuploadprofile :global(.MuiInputBase-root)::after {
+	 content: none;
+}
+ .fileuploadprofile :global(.MuiFormControl-fullWidth) {
+	 width: 8rem;
+	 height: 8rem;
+	 margin-left: -9rem;
+}
+ .fileuploadprofile :global(.MuiInputBase-input) {
+	 width: 1px;
+	 height: 1px;
+	 overflow: hidden;
+}
+ .fileuploadprofile :global(.MuiIconButton-root) {
+	 width: 8rem;
+	 height: 8rem;
+	 box-sizing: border-box;
+	 top: -1rem;
+	 left: 1px;
+	 right: unset;
+	 display: none;
+}
+ .fileuploadprofile :global(.MuiIconButton-label) {
+	 height: 100%;
+}
+ .fileuploadprofile:hover img {
+	 transition: all linear 300ms;
+	 filter: blur(1px);
+}
+ .fileuploadprofile:hover :global(.MuiIconButton-root) {
+	 display: block;
+}
+ .fourhundred {
+	 height: 400px;
+}
+ .padded {
+	 padding: 1rem;
+}
+ .heroImage {
+	 width: 100%;
+	 background-size: cover;
+	 display: flex;
+	 align-items: center;
+	 max-height: 38rem;
+}
+ .heroImage .heroDarkArea {
+	 padding: 4.5rem;
+	 background-color: #0d1d2a;
+}
+ .heroImage .heroDarkArea h1 {
+	 color: #e1ad62;
+	 font-family: 'Inter';
+	 font-style: normal;
+	 font-weight: 700;
+	 font-size: 4rem;
+	 line-height: 114.8%;
+	 margin: 0;
+}
+ .heroImage .heroDarkArea h2 {
+	 font-family: 'Inter';
+	 font-style: normal;
+	 font-weight: 700;
+	 font-size: 1.875rem;
+	 line-height: 132.8%;
+	 color: #fff;
+	 margin-top: 2rem;
+}
+ .productCardContent .productCardContentDiscount {
+	 color: white;
+	 background-color: red;
+	 font-weight: 600;
+	 float: right;
+	 border-radius: 10px;
+	 padding: 3px;
+	 margin: 0px 5px;
+}
+ .productCardContent .productCardContentPrice {
+	 color: red;
+	 font-weight: 600;
+	 float: right;
+	 padding: 3px;
+	 margin: 0px 5px;
+}
+ .productCardContent .productCardContentPriceCrossedOut {
+	 color: gray;
+	 text-decoration: line-through;
+	 text-decoration-thickness: 2px;
+	 font-weight: 600;
+	 float: right;
+	 padding: 3px;
+	 margin: 0px 5px;
+}
+ .productCardContent div {
+	 color: gray;
+	 font-weight: 400;
+}
+ 
